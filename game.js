@@ -1,22 +1,12 @@
 const selectCharacter = document.querySelectorAll(".imgbox img");
 const startGame = document.querySelector("#btn");
-
-// const selectedAnime = document.querySelector("h3");
-
 const timeDiv = document.querySelector("#left span");
-
 const scoreDiv = document.querySelector("#right span");
-
 const selectionScreen = document.querySelector("#top");
-
 const playingScreen = document.querySelector("#second-page");
-
 const scoreScreen= document.querySelector("#third-page");
-
 const blankBoxImg= document.querySelector("#blank-box-img");
-
 const finalScoreDiv= document.querySelector("#third-page h3 span")
-
 
 let selectedAnime="";
 let timer=60;
@@ -39,25 +29,13 @@ selectCharacter.forEach((char)=>{
 });
 
 startGame.addEventListener("click",()=>{
-  // selectionScreen.Style.display = "none";
   selectionScreen.style.display="none"
-  // playingScreen.Style.display="flex";1
   playingScreen.style.display="flex"
 
 //..........................................
   let elem=document.querySelector("#blank-box-img");
 let rect=elem.getBoundingClientRect()
 
-// for (const key in rect) {
-//   if (typeof rect[key] !== "function") {
-//     // let para = document.createElement("p");
-//     para.textContent = `${key} : ${rect[key]}`;
-//     document.body.appendChild(para);
-//   }
-// }
-
-
-  //console.log(selectedAnime)
 
   const interval=setInterval(()=>{
     if (timer===1){
@@ -75,11 +53,9 @@ let rect=elem.getBoundingClientRect()
     img.classList.add("smallImg");
 
     // attach clicking mechanism
-
     img.addEventListener("click", removeImage);
 
     // give the image a random position 
-
     randomPosition(img);
     blankBoxImg.append(img);
   },500);
@@ -87,39 +63,17 @@ let rect=elem.getBoundingClientRect()
 );
 
 // getBoundingClientRect()
-
 function randomPosition(elem){
-
-  // let rect = document.querySelector("#blank-box-img").getBoundingClientRect();
-    // console.log("rect",rect);
-    
-    // // const minx = rect.left -130;
-    // const minx = rect.left;
-    // // const maxx = rect.right -210;
-    // const maxx = rect.right;
-    
-    // // const miny = rect.top -50;
-    // const miny = rect.top;
-    // // const maxy = rect.bottom -90;
-    // const maxy = rect.bottom;
-
-    // ........................ 
-  // const y= blankBoxImg.clientHeight+25;
-  // const x= blankBoxImg.clientWidth+30;
   const y= blankBoxImg.clientHeight;
   const x= blankBoxImg.clientWidth;
 //  console.log(x,y)
   const randomY=Math.random()*y;
   const randomX=Math.random()*x;
-  // ....................................... 
-  // const randomY=Math.random()*(y - 10 ) ;
-  // const randomX=Math.random()*(x - 10) ;
-  // ........................ ......
+
 // ............................................ 
   elem.style.top=randomY+"px";
   elem.style.left= randomX+"px";
 }
-
 
 
 function removeImage(event){
@@ -130,7 +84,7 @@ function calculateScore(){
   finalScoreDiv.innerHTML=score;
 }
 
-// ......................... 
+
 
 
 
