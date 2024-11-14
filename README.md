@@ -1,6 +1,6 @@
 # Anime Character Click Game 
 
-A fun, interactive game where players select their favorite anime character and attempt to score as many points as possible within a limited time by clicking on character images that appear randomly on the screen.
+A fun, interactive game where players select one of the available anime characters and attempt to score as many points as possible within a limited time by clicking on character images that appear randomly on the screen.
 
 ##  Game Objective
 Select your character, start the game, and click on as many images of your chosen character as possible within 60 seconds. Each successful click earns you points, which are displayed at the end of the game.
