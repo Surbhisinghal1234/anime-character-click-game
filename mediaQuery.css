@@ -1,1 +1,63 @@
 /* @media screen and (min-width: 480px) and (max-width:560) */
+
+@media (max-width:768px){
+    
+    #game-img {
+flex-direction: column;
+    }
+    .main-box{
+        height:unset ;
+        width: 120%;
+       padding: 2rem 0;
+
+    }
+    #top{
+        height: unset;
+    }
+    body {
+       
+        height: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+
+    }
+    #blank-box-img{
+        min-width: 20rem ;
+        min-height:10rem ;
+    }
+
+    #second-page {
+       
+        flex-direction: column;
+        color: rgb(106, 255, 0);
+        gap: 1rem;
+        min-height: 100vh ;
+        padding: 1rem;
+    }
+    #left, #right {
+        font-size: 40px;
+    }
+   
+}
+@media (max-width:400px){
+    .main-box{
+       padding: 2rem 1rem;
+       height:unset ;
+       width: unset;
+
+    }
+
+}
+@media (max-width:1500px){
+    #right {
+        padding-left: .2rem;
+    }
+}
+@media (max-width:1300px){
+    #right {
+        padding-left: 1rem;
+    }
+}

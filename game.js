@@ -9,7 +9,7 @@ const blankBoxImg= document.querySelector("#blank-box-img");
 const finalScoreDiv= document.querySelector("#third-page h3 span")
 
 let selectedAnime="";
-let timer=60;
+let timer=60000;
 let score=0;
 
 selectCharacter.forEach((char)=>{
